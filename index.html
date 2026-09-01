@@ -1,0 +1,175 @@
+<style>
+  .lea-event{--teal:#164F56;--bg:#F0F4F7;--yellow:#F1B718;--light:#CFE0E3;--ink:#2A3B3E;--muted:#4A6A70;
+    font-family:'Segoe UI',Calibri,Arial,sans-serif;background:var(--bg);border-radius:18px;
+    padding:28px;max-width:900px;margin:0 auto;box-sizing:border-box;color:var(--ink);}
+  .lea-event *{box-sizing:border-box;margin:0;}
+  .lea-hero{background:var(--teal);border-radius:14px;padding:34px 30px;margin-bottom:22px;}
+  .lea-chip{display:inline-block;background:var(--yellow);color:var(--teal);font-weight:700;
+    font-size:13px;letter-spacing:2px;padding:6px 16px;border-radius:999px;margin-bottom:14px;}
+  .lea-hero h2{color:var(--yellow);font-size:clamp(20px,3.4vw,30px);line-height:1.2;margin-bottom:10px;}
+  .lea-hero p{color:var(--light);font-size:15px;font-style:italic;}
+  .lea-meta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px;}
+  .lea-meta div{flex:1 1 240px;background:#fff;border-radius:12px;padding:14px 18px;}
+  .lea-meta strong{display:block;color:var(--teal);font-size:12px;letter-spacing:1.5px;margin-bottom:4px;}
+  .lea-meta span{font-size:15px;}
+  .lea-agenda{display:flex;flex-direction:column;gap:9px;margin-bottom:26px;}
+  .lea-row{display:grid;grid-template-columns:120px 1fr;gap:14px;align-items:center;
+    background:#fff;border-radius:10px;padding:13px 18px;}
+  .lea-row.lea-spk{grid-template-columns:120px 1.4fr 1fr;}
+  .lea-time{font-weight:700;color:var(--teal);font-size:14px;background:var(--bg);
+    border:1px solid #D9E3E7;border-radius:999px;text-align:center;padding:5px 6px;}
+  .lea-topic{font-weight:700;color:var(--teal);font-size:14.5px;line-height:1.3;}
+  .lea-topic small{display:block;font-weight:400;color:var(--muted);font-size:13px;margin-top:3px;}
+  .lea-speaker{font-size:13.5px;color:var(--ink);border-left:1px solid #D9E3E7;padding-left:14px;line-height:1.35;}
+  .lea-speaker b{color:var(--ink);}
+  .lea-speaker i{color:var(--muted);font-style:normal;font-size:12.5px;display:block;}
+  .lea-break{background:var(--yellow);}
+  .lea-break .lea-time{background:transparent;border:none;text-align:center;padding:0;}
+  .lea-break .lea-topic{letter-spacing:1px;}
+  .lea-reg{background:#fff;border-radius:14px;padding:26px;text-align:center;}
+  .lea-reg h3{color:var(--teal);font-size:20px;margin-bottom:6px;}
+  .lea-reg p{color:var(--muted);font-size:14px;margin-bottom:18px;}
+  .lea-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .lea-btn{display:inline-block;padding:14px 30px;border-radius:999px;font-weight:700;
+    font-size:15px;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease;}
+  .lea-btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(22,79,86,.2);}
+.lea-event a.lea-btn-live,
+.lea-event a.lea-btn-live:visited,
+.lea-event a.lea-btn-live:hover,
+.lea-event a.lea-btn-live:focus{
+  background:var(--yellow)!important;color:var(--teal)!important;
+  text-decoration:none!important;border:none!important;
+}
+.lea-event a.lea-btn-online,
+.lea-event a.lea-btn-online:visited,
+.lea-event a.lea-btn-online:hover,
+.lea-event a.lea-btn-online:focus{
+  background:var(--teal)!important;color:#ffffff!important;
+  text-decoration:none!important;border:none!important;
+}
+  @media(max-width:640px){
+    .lea-event{padding:16px;}
+    .lea-row,.lea-row.lea-spk{grid-template-columns:1fr;gap:8px;}
+    .lea-time{justify-self:start;padding:5px 14px;}
+    .lea-speaker{border-left:none;padding-left:0;border-top:1px solid #EDF2F4;padding-top:8px;}
+  }
+  .lea-foot{margin-top:22px;text-align:center;}
+.lea-logos{display:flex;justify-content:center;align-items:center;
+  gap:28px;flex-wrap:wrap;margin-bottom:14px;}
+.lea-logos img{height:52px;width:auto;max-width:180px;object-fit:contain;}
+.lea-disc{font-size:12.5px;color:var(--muted);line-height:1.5;
+  max-width:640px;margin:0 auto;}
+</style>
+
+<div class="lea-event">
+
+  <div class="lea-hero">
+    <span class="lea-chip">NACIONALINĖS DIRBTUVĖS</span>
+    <h2>Nuo informavimo iki pokyčio: kokios priemonės keičia energijos vartotojų elgseną?</h2>
+    <p>Renginys energijos tiekėjams ir visiems, dirbantiems su vartotojų elgsenos keitimu energetikos srityje.<br>
+Švietimo ir konsultavimo rezultatai&nbsp;| Gyventojų įpročių apžvalga&nbsp;| Dalijimasis patirtimi ir sprendimų paieška</p>
+  </div>
+
+  <div class="lea-meta">
+    <div><strong>DATA IR LAIKAS</strong><span style="font-weight:bold">2026 m. rugsėjo 14 d., 9:30–16:00</span></div>
+    <div><strong>VIETA</strong><span style="font-weight:bold">„Courtyard by Marriott Vilnius City Center“ <br /><a style="font-weight:bold" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x46dd941b8584f3c3:0x4a7b01a0621ef07c?sa=X&amp;ved=1t:8290&amp;ictx=111" target="_blank">Rinktinės g. 3, Vilnius</a> </span></div>
+  </div>
+
+  <div class="lea-agenda">
+
+    <div class="lea-row lea-break">
+      <div class="lea-time">9:30–10:00</div>
+      <div class="lea-topic">REGISTRACIJA, PASITIKIMO KAVA</div>
+    </div>
+
+    <div class="lea-row lea-spk">
+      <div class="lea-time">10:00–10:10</div>
+      <div class="lea-topic">Įvadinis žodis</div>
+      <div class="lea-speaker"><b>Agnė Bagočiutė</b><i>VšĮ Lietuvos energetikos agentūros (LEA) direktorė</i></div>
+    </div>
+
+    <div class="lea-row lea-spk">
+      <div class="lea-time">10:10–10:40</div>
+      <div class="lea-topic">Energetikos duomenų apžvalga
+        <small>Energijos vartojimo kainų apžvalga</small></div>
+      <div class="lea-speaker"><b>LEA Energetikos duomenų analizės centras</b><i></i></div>
+    </div>
+
+    <div class="lea-row lea-spk">
+      <div class="lea-time">10:40–11:00</div>
+      <div class="lea-topic">Nuo informavimo iki sutaupymo: energijos vartotojų švietimo ir konsultavimo 2025 metų rezultatai
+        <small>Naujos priemonės pristatymas, tobulintinos sritys, gairių pristatymas</small></div>
+      <div class="lea-speaker"><b>Agnė Stonienė</b><i>LEA Energijos vartojimo efektyvumo didinimo kompetencijų centro l. e. p. vadovė</i></div>
+    </div>
+
+    <div class="lea-row lea-spk">
+      <div class="lea-time">11:00–11:20</div>
+      <div class="lea-topic">Ar gyventojai iš tiesų keičia savo energijos vartojimo įpročius?
+        <small>Gyventojų energijos vartojimo įpročių apklausos pristatymas</small></div>
+      <div class="lea-speaker"><b>Mindaugas Mižutavičius</b><i>LEA Energijos vartojimo efektyvumo didinimo kompetencijų centro energijos vartojimo efektyvumo duomenų analitikas</i></div>
+    </div>
+
+    <div class="lea-row lea-spk">
+      <div class="lea-time">11:20–11:40</div>
+      <div class="lea-topic">Energijos taupymas praktiškai: nuo paprastų įpročių iki efektyvių sprendimų
+        <small>LIFE projekto „SaveEnergyTogether“ gyventojų apklausos pristatymas</small></div>
+      <div class="lea-speaker"><b>Kęstutis Kupšys</b><i>Vartotojų aljanso viceprezidentas, pakaitinis Europos ekonomikos ir socialinių reikalų komiteto narys</i></div>
+    </div>
+
+      <div class="lea-row lea-break">
+      <div class="lea-time">11:40–12:00</div>
+      <div class="lea-topic">PERTRAUKA</div>
+    </div>
+
+    <div class="lea-row lea-spk">
+      <div class="lea-time">12:00–13:00</div>
+      <div class="lea-topic">Diskusija. Kaip žinios virsta energijos taupymu: kas iš tiesų veikia ir padeda pasiekti geriausius rezultatus.
+        <small>Energijos tiekėjų patirtys</small></div>
+      <div class="lea-speaker"><b>Energijos tiekėjų atstovai</b><i></i></div>
+    </div>
+
+    <div class="lea-row lea-break">
+      <div class="lea-time">13:00–14:00</div>
+      <div class="lea-topic">PIETŲ PERTRAUKA</div>
+    </div>
+
+    <div class="lea-row lea-spk">
+      <div class="lea-time">14:00–14:30</div>
+      <div class="lea-topic">Vartotojų elgsena: kaip gyvenimo būdas lemia energijos vartojimo įpročius?</div>
+      <div class="lea-speaker"><b>Aistė Balžekienė</b><i>Kauno technologijos universiteto sociologijos profesorė, mokslo grupės „Pilietinė visuomenė ir darnus vystymasis“ vadovė</i></div>
+    </div>
+
+    <div class="lea-row lea-spk">
+      <div class="lea-time">14:30–15:30</div>
+      <div class="lea-topic">Darbas grupėse. Kaip veiksmingiau skatinti energijos vartojimo elgsenos pokyčius?
+        <!-- <small>Temos:<br /> · Interaktyvūs ir skaitmeniniai įrankiai: kada verta kurti, o kada – ne?<br /> · Kaip pasiekti tuos, kurie energijos taupymu nesidomi?<br /> · Nuo informacijos iki veiksmo: ką ir kaip turime komunikuoti?<br/ > · Šilumos vartotojai: kaip sustiprinti šilumos tiekėjų vaidmenį?<br/ > · Kaip suprasti, ar komunikacija iš tikrųjų veikia?</small> --></div>
+        <!-- <div class="lea-speaker"><b>Moderuoja Agnė Stonienė</b><i>LEA Energijos vartojimo efektyvumo didinimo kompetencijų centro l. e. p. vadovė</i></div> -->
+    </div>
+
+    <div class="lea-row lea-break">
+      <div class="lea-time">15:30–16:00</div>
+      <div class="lea-topic">RENGINIO APIBENDRINIMAS IR TINKLAVEIKA</div>
+    </div>
+
+  </div>
+
+<div class="lea-reg">
+  <h3>Registracija</h3>
+  <p>Renginys vyks gyvai Vilniuje. Dalyvių skaičius ribotas, todėl kviečiame registruotis iš anksto.</p>
+  <div class="lea-btns">
+    <a class="lea-btn lea-btn-live" href="https://forms.office.com/Pages/ResponsePage.aspx?id=h7OgW2haKkm8kadA_iE3jf12i8fqMtRJluc8OYpmJ09UOEhDSDNZTTZQNlZXQ0YyTjMyMlJBVUNUVS4u">Registruotis</a>
+  </div>
+</div>
+
+  <div class="lea-foot">
+  <div class="lea-logos">
+    <img src="Images\LEA_logo.png" alt="Lietuvos energetikos agentūra">
+    <img src="Images\life_logo.jpg" alt="LIFE programa">
+    <img src="Images\AM_logo.png" alt="Aplinkos Ministerija">
+  </div>
+  <p class="lea-disc">
+    Projektas „Energijos efektyvumo didinimas Lietuvoje“ (Nr. LIFE20 IPC/LT/000002) yra finansuojamas Europos Sąjungos LIFE programos ir Lietuvos Respublikos lėšomis. 
+  </p>
+</div>
+
+</div>
